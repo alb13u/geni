@@ -9,5 +9,5 @@
 
 (def spark
   "The default SparkSession as a Delayed object."
-  (atom
+  (delay
    (zero-one.geni.spark/create-spark-session session-config)))
